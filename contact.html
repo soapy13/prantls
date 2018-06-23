@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Sophy Peng">
+  <meta name="keywords" content="Prantl's Bakery, burnt almond torte">
+  <meta name="description" content="Prantl's Bakery Website">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prantl's Bakery</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" media="all" type="text/css" href="css/main.css" />
+  <script type="text/javascript" src="js/scripts.js" ></script>
+  </head>
+
+
+  <body style="background-color: lightgreen">
+
+ <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="visit.html">Visit Us</a>
+    <a href="torte.html">Burnt Almond Torte</a>
+    <a href="order.html">Order Now</a>
+    <a href="events.html">Events</a>
+  </div>
+
+</div>
+
+
+  <span style="font-size:50px;cursor:pointer;padding:10px" onclick="openNav()">&#9776; </span>
+<h1 style="text-align: center; padding:0 0 2% 0;">CONTACT US</h1>
+
+<div class="container">
+  <form action="mailto:infoneeded@prantlsbakery.com" method="post" enctype="text/plain">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+    <label for="lname">Zip Code</label>
+    <input type="number" id="zcode" name="zipcode" placeholder="12345" required>
+    <br/>
+
+    <label for="lname">Email</label>
+    <input type="email" id="email" name="email" placeholder="abc@edg" required>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

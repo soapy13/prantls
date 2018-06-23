@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Sophy Peng">
+  <meta name="keywords" content="Prantl's Bakery, burnt almond torte">
+  <meta name="description" content="Prantl's Bakery Website">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prantl's Bakery</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" media="all" type="text/css" href="css/main.css" />
+  <script type="text/javascript" src="js/scripts.js" ></script>
+  </head>
+
+
+  <body style="background-color: lightgreen">
+
+ <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="visit.html">Visit Us</a>
+    <a href="torte.html">Burnt Almond Torte</a>
+    <a href="order.html">Order Now</a>
+    <a href="events.html">Events</a>
+  </div>
+
+</div>
+
+
+  <span style="font-size:50px;cursor:pointer;padding:10px" onclick="openNav()">&#9776; </span>
+<h1 style="text-align: center; padding:0 0 2% 0">Order Now "Burnt Almond Torte"</h1>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="lname">Billing Address</label>
+    <input type="text" id="address" name="address" placeholder="Address">
+
+    <label for="lname">Phone Number</label>
+    <input type="number" id="zcode" name="zipcode" placeholder="1234567890" required>
+    <br/>
+
+    <label for="quantity">Quantity</label>
+    <select id="quantity" name="quantity">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+    <br/>
+
+    <label for="where">Where</label>
+    <select id="where" name="where">
+      <option value="shadyside">Shadyside</option>
+      <option value="downtown">Downtown</option>
+    </select>
+
+    <label for="date">Pickup Date</label>
+    <input type="date" name="bday" placeholder="mm/dd/yyyy">
+
+    <label for="time">Pickup Time</label>
+    <input type="time" name="usr_time">
+
+    <br/>
+    
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+</body>
+</html>
